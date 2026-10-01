@@ -103,6 +103,15 @@ footer strong{color:white}
 @media(max-width:1000px){.featured-block .product-items{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:650px){.featured-block .product-items{grid-template-columns:repeat(2,1fr)}}
 
+
+/* V10 animated welcome character */
+.hero-card{display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero-gif{width:min(260px,80%);height:260px;object-fit:contain;display:block;margin:0 auto 12px;filter:drop-shadow(0 12px 22px rgba(0,0,0,.35));border-radius:12px}
+.hero-card .big{display:none}
+@media(max-width:850px){
+  .hero-gif{width:220px;height:220px}
+}
+
 </style>
 
 <style>
@@ -151,7 +160,7 @@ footer strong{color:white}
       </div>
     </div>
     <div class="hero-card">
-      <div class="big">🛍️</div>
+      <img class="hero-gif" src="https://media.giphy.com/media/l46Cnk4ZRTlfeI32o/giphy.gif" alt="Animated Spider-Man waving welcome" loading="eager">
       <h3>AJANTHAA MODEL SHOP</h3>
       <p>School • Fancy • Pooja • Toys</p>
       <p style="margin-top:18px">Visit us in Chenkalady, Batticaloa.</p>
